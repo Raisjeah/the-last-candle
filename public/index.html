@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Last Candle - Platform Trading Komunitas dengan Sinyal Real-time dan Analisis Teknikal">
+    <title>The Last Candle - Trading Community Platform</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <img src="../assets/logo.png" alt="The Last Candle Logo" class="logo-image">
+                <span class="logo-text">The Last Candle</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Fitur</a></li>
+                <li><a href="#community" class="nav-link">Komunitas</a></li>
+                <li><a href="#pricing" class="nav-link">Harga</a></li>
+                <li><a href="../auth/login.html" class="nav-link nav-login">Login</a></li>
+                <li><a href="../auth/register.html" class="nav-link nav-register">Daftar</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Maksimalkan Profit Trading Anda</h1>
+                <p class="hero-subtitle">Bergabunglah dengan ribuan trader profesional yang menggunakan sinyal real-time dan analisis teknikal terbaik</p>
+                <div class="hero-buttons">
+                    <a href="../auth/register.html" class="btn btn-primary">Bergabung Sekarang</a>
+                    <a href="#features" class="btn btn-secondary">Pelajari Selengkapnya</a>
+                </div>
+            </div>
+            <div class="hero-chart">
+                <img src="../assets/hero-chart.png" alt="Trading Chart" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Snapshot Widget -->
+    <section class="market-snapshot">
+        <div class="market-container">
+            <h2 class="section-title">Market Snapshot</h2>
+            <div class="market-grid">
+                <div class="market-card">
+                    <div class="market-header">
+                        <span class="market-symbol">BTC/USD</span>
+                        <span class="market-change positive">+2.45%</span>
+                    </div>
+                    <p class="market-price">$42,350.25</p>
+                    <div class="market-chart-mini" id="btc-chart"></div>
+                </div>
+                <div class="market-card">
+                    <div class="market-header">
+                        <span class="market-symbol">GOLD/USD</span>
+                        <span class="market-change negative">-1.23%</span>
+                    </div>
+                    <p class="market-price">$2,045.80</p>
+                    <div class="market-chart-mini" id="gold-chart"></div>
+                </div>
+                <div class="market-card">
+                    <div class="market-header">
+                        <span class="market-symbol">EUR/USD</span>
+                        <span class="market-change positive">+0.65%</span>
+                    </div>
+                    <p class="market-price">1.0855</p>
+                    <div class="market-chart-mini" id="forex-chart"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="features-container">
+            <h2 class="section-title">Alat & Fitur Unggulan</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Grafik Real-time</h3>
+                    <p class="feature-description">Analisis teknikal dengan grafik TradingView terintegrasi untuk semua instrumen trading</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">Sinyal Trading</h3>
+                    <p class="feature-description">Dapatkan sinyal entry, stop loss, dan take profit dari algoritma AI kami yang akurat</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔔</div>
+                    <h3 class="feature-title">Push Notification</h3>
+                    <p class="feature-description">Notifikasi real-time ke smartphone Anda saat sinyal The Last Candle muncul</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3 class="feature-title">Forum Komunitas</h3>
+                    <p class="feature-description">Diskusi dengan trader lain, share strategi, dan pelajari dari pengalaman mereka</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3 class="feature-title">Academy & Edukasi</h3>
+                    <p class="feature-description">Video tutorial dan modul PDF untuk meningkatkan skill trading Anda dari nol</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3 class="feature-title">AI Chat Bot</h3>
+                    <p class="feature-description">TLC Intelligence AI siap menjawab pertanyaan trading Anda 24/7 dengan akurat</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Preview Section -->
+    <section id="community" class="community-preview">
+        <div class="community-container">
+            <h2 class="section-title">Komunitas The Last Candle</h2>
+            <div class="community-stats">
+                <div class="stat-card">
+                    <h3 class="stat-number">5,234+</h3>
+                    <p class="stat-label">Anggota Aktif</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number">98.2%</h3>
+                    <p class="stat-label">Tingkat Kepuasan</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number">12,450+</h3>
+                    <p class="stat-label">Sinyal Dikirim</p>
+                </div>
+            </div>
+
+            <div class="testimonials">
+                <h3 class="testimonials-title">Testimoni Member</h3>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Sinyal dari The Last Candle sangat akurat. Dalam 3 bulan pertama, saya sudah profit 150%!"</p>
+                        <div class="testimonial-author">
+                            <strong>Budi Santoso</strong>
+                            <span>Trader Profesional</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Komunitas sangat supportif dan moderator aktif menjaga kualitas diskusi. Sangat merekomendasikan!"</p>
+                        <div class="testimonial-author">
+                            <strong>Siti Nurhaliza</strong>
+                            <span>Investor Pemula</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Academy-nya sangat komprehensif. Dari fundamental hingga advanced trading strategy semua ada."</p>
+                        <div class="testimonial-author">
+                            <strong>Ahmad Wijaya</strong>
+                            <span>Trader Swing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Teaser -->
+    <section class="education-teaser">
+        <div class="education-container">
+            <h2 class="section-title">Tingkatkan Skill Trading Anda</h2>
+            <p class="education-subtitle">Akses ratusan video tutorial dan modul PDF dari instruktur profesional</p>
+            <div class="courses-preview">
+                <div class="course-card">
+                    <span class="course-badge">Gratis</span>
+                    <h3 class="course-title">Trading Fundamentals</h3>
+                    <p class="course-description">Pelajari dasar-dasar trading dari nol</p>
+                </div>
+                <div class="course-card">
+                    <span class="course-badge">Premium</span>
+                    <h3 class="course-title">Technical Analysis Mastery</h3>
+                    <p class="course-description">Kuasai analisis teknikal tingkat lanjut</p>
+                </div>
+                <div class="course-card">
+                    <span class="course-badge">Premium</span>
+                    <h3 class="course-title">Psychology & Risk Management</h3>
+                    <p class="course-description">Kontrol emosi dan kelola risiko dengan benar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="pricing-container">
+            <h2 class="section-title">Pilih Paket Anda</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Paket Gratis</h3>
+                    <p class="pricing-price">Rp 0<span class="pricing-period">/bulan</span></p>
+                    <ul class="pricing-features">
+                        <li>✓ Akses Forum Komunitas</li>
+                        <li>✓ 5 Sinyal per Bulan</li>
+                        <li>✓ Academy Gratis</li>
+                        <li>✗ Sinyal Premium</li>
+                        <li>✗ AI Chat Bot</li>
+                    </ul>
+                    <a href="../auth/register.html" class="btn btn-pricing">Daftar Gratis</a>
+                </div>
+                <div class="pricing-card pricing-featured">
+                    <span class="pricing-badge">POPULER</span>
+                    <h3 class="pricing-title">Paket Premium</h3>
+                    <p class="pricing-price">Rp 299.000<span class="pricing-period">/bulan</span></p>
+                    <ul class="pricing-features">
+                        <li>✓ Semua Fitur Gratis</li>
+                        <li>✓ Unlimited Sinyal</li>
+                        <li>✓ AI Chat Bot 24/7</li>
+                        <li>✓ Priority Support</li>
+                        <li>✓ Live Webinar Eksklusif</li>
+                    </ul>
+                    <a href="../auth/register.html" class="btn btn-primary">Upgrade ke Premium</a>
+                </div>
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Paket VIP</h3>
+                    <p class="pricing-price">Rp 999.000<span class="pricing-period">/bulan</span></p>
+                    <ul class="pricing-features">
+                        <li>✓ Semua Fitur Premium</li>
+                        <li>✓ 1-on-1 Coaching</li>
+                        <li>✓ Private Signal Channel</li>
+                        <li>✓ Early Access Features</li>
+                        <li>✓ Lifetime Support</li>
+                    </ul>
+                    <a href="../auth/register.html" class="btn btn-pricing">Hubungi Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-container">
+            <h2 class="cta-title">Siap Maksimalkan Trading Anda?</h2>
+            <p class="cta-subtitle">Bergabunglah dengan ribuan trader yang telah merasakan manfaatnya</p>
+            <a href="../auth/register.html" class="btn btn-primary btn-large">Mulai Sekarang - Gratis!</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4 class="footer-title">Tentang Kami</h4>
+                <ul class="footer-links">
+                    <li><a href="../public/about.html">Tentang The Last Candle</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Karir</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Produk</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Trading Terminal</a></li>
+                    <li><a href="#">Signal Center</a></li>
+                    <li><a href="#">Academy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Dukungan</h4>
+                <ul class="footer-links">
+                    <li><a href="../public/contact.html">Hubungi Kami</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Syarat & Ketentuan</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Keamanan</h4>
+                <p class="footer-text">🔒 SSL Certificate - Data Terenkripsi</p>
+                <p class="footer-text">Anda dapat mempercayai keamanan data Anda</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 The Last Candle. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

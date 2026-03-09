@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy - The Last Candle</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <div style="color: var(--color-gold); font-weight: 700; font-size: 1.25rem; margin-bottom: var(--spacing-lg);">
+                    🕯️ The Last Candle
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Menu Utama</div>
+                <ul class="sidebar-menu">
+                    <li><a href="main.html" class="sidebar-link">
+                        <span class="sidebar-icon">📊</span>
+                        <span>Dashboard</span>
+                    </a></li>
+                    <li><a href="analysis.html" class="sidebar-link">
+                        <span class="sidebar-icon">📈</span>
+                        <span>Terminal Trading</span>
+                    </a></li>
+                    <li><a href="#" class="sidebar-link">
+                        <span class="sidebar-icon">🎯</span>
+                        <span>Signal Center</span>
+                    </a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Komunitas</div>
+                <ul class="sidebar-menu">
+                    <li><a href="forum.html" class="sidebar-link">
+                        <span class="sidebar-icon">💬</span>
+                        <span>Forum</span>
+                    </a></li>
+                    <li><a href="academy.html" class="sidebar-link active">
+                        <span class="sidebar-icon">📚</span>
+                        <span>Academy</span>
+                    </a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Akun</div>
+                <ul class="sidebar-menu">
+                    <li><a href="#" class="sidebar-link">
+                        <span class="sidebar-icon">⚙️</span>
+                        <span>Pengaturan</span>
+                    </a></li>
+                    <li><a href="#" class="sidebar-link">
+                        <span class="sidebar-icon">💳</span>
+                        <span>Subscription</span>
+                    </a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="dashboard-main">
+            <!-- Header -->
+            <div class="dashboard-header">
+                <div>
+                    <h1 class="dashboard-title">Academy & Learning</h1>
+                </div>
+                <div class="dashboard-user">
+                    <div class="user-avatar">JD</div>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="dashboard-content">
+                <!-- Filter & Search -->
+                <div class="dashboard-card">
+                    <div style="display: flex; gap: var(--spacing-lg);">
+                        <input type="text" placeholder="Cari kursus..." 
+                            style="flex: 1; padding: var(--spacing-sm); background: var(--color-dark); border: 1px solid var(--color-border); border-radius: var(--radius-md); color: var(--color-light);">
+                        <select style="padding: var(--spacing-sm); background: var(--color-dark); border: 1px solid var(--color-border); border-radius: var(--radius-md); color: var(--color-light);">
+                            <option>Semua Level</option>
+                            <option>Pemula</option>
+                            <option>Menengah</option>
+                            <option>Advanced</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Courses Grid -->
+                <h2 style="color: var(--color-light); margin: var(--spacing-2xl) 0 var(--spacing-lg);">Kursus Tersedia</h2>
+                <div class="grid-3">
+                    <!-- Course 1 -->
+                    <div class="dashboard-card">
+                        <div style="background: linear-gradient(135deg, var(--color-gold), var(--color-gold-light)); height: 150px; border-radius: var(--radius-lg); margin-bottom: var(--spacing-lg);">
+                        </div>
+                        <h3 style="color: var(--color-light); margin-bottom: var(--spacing-sm);">Trading Fundamentals</h3>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-md);">
+                            <span style="color: var(--color-text-secondary); font-size: var(--font-size-sm);">Pemula</span>
+                            <span style="background: var(--color-gold); color: var(--color-dark); padding: 2px 8px; border-radius: 4px; font-size: var(--font-size-sm); font-weight: 600;">Gratis</span>
+                        </div>
+                        <p style="color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--spacing-md);">Pelajari dasar-dasar trading untuk pemula</p>
+                        <button class="btn btn-primary" style="width: 100%;">Mulai Belajar</button>
+                    </div>
+
+                    <!-- Course 2 -->
+                    <div class="dashboard-card">
+                        <div style="background: linear-gradient(135deg, #3b82f6, #1d4ed8); height: 150px; border-radius: var(--radius-lg); margin-bottom: var(--spacing-lg);">
+                        </div>
+                        <h3 style="color: var(--color-light); margin-bottom: var(--spacing-sm);">Technical Analysis Mastery</h3>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-md);">
+                            <span style="color: var(--color-text-secondary); font-size: var(--font-size-sm);">Advanced</span>
+                            <span style="background: var(--color-gold); color: var(--color-dark); padding: 2px 8px; border-radius: 4px; font-size: var(--font-size-sm); font-weight: 600;">Premium</span>
+                        </div>
+                        <p style="color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--spacing-md);">Kuasai analisis teknikal tingkat lanjut</p>
+                        <button class="btn btn-pricing" style="width: 100%;">Upgrade untuk Akses</button>
+                    </div>
+
+                    <!-- Course 3 -->
+                    <div class="dashboard-card">
+                        <div style="background: linear-gradient(135deg, #10b981, #059669); height: 150px; border-radius: var(--radius-lg); margin-bottom: var(--spacing-lg);">
+                        </div>
+                        <h3 style="color: var(--color-light); margin-bottom: var(--spacing-sm);">Psychology & Risk Management</h3>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-md);">
+                            <span style="color: var(--color-text-secondary); font-size: var(--font-size-sm);">Menengah</span>
+                            <span style="background: var(--color-gold); color: var(--color-dark); padding: 2px 8px; border-radius: 4px; font-size: var(--font-size-sm); font-weight: 600;">Premium</span>
+                        </div>
+                        <p style="color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--spacing-md);">Kontrol emosi dan kelola risiko dengan benar</p>
+                        <button class="btn btn-pricing" style="width: 100%;">Upgrade untuk Akses</button>
+                    </div>
+
+                    <!-- Course 4 -->
+                    <div class="dashboard-card">
+                        <div style="background: linear-gradient(135deg, #ef4444, #dc2626); height: 150px; border-radius: var(--radius-lg); margin-bottom: var(--spacing-lg);">
+                        </div>
+                        <h3 style="color: var(--color-light); margin-bottom: var(--spacing-sm);">Swing Trading Strategies</h3>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-md);">
+                            <span style="color: var(--color-text-secondary); font-size: var(--font-size-sm);">Menengah</span>
+                            <span style="background: var(--color-gold); color: var(--color-dark); padding: 2px 8px; border-radius: 4px; font-size: var(--font-size-sm); font-weight: 600;">Premium</span>
+                        </div>
+                        <p style="color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--spacing-md);">Strategi swing trading untuk profit konsisten</p>
+                        <button class="btn btn-pricing" style="width: 100%;">Upgrade untuk Akses</button>
+                    </div>
+
+                    <!-- Course 5 -->
+                    <div class="dashboard-card">
+                        <div style="background: linear-gradient(135deg, #f59e0b, #d97706); height: 150px; border-radius: var(--radius-lg); margin-bottom: var(--spacing-lg);">
+                        </div>
+                        <h3 style="color: var(--color-light); margin-bottom: var(--spacing-sm);">Forex Trading Basics</h3>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-md);">
+                            <span style="color: var(--color-text-secondary); font-size: var(--font-size-sm);">Pemula</span>
+                            <span style="background: var(--color-gold); color: var(--color-dark); padding: 2px 8px; border-radius: 4px; font-size: var(--font-size-sm); font-weight: 600;">Gratis</span>
+                        </div>
+                        <p style="color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--spacing-md);">Pengenalan trading forex dan cara kerjanya</p>
+                        <button class="btn btn-primary" style="width: 100%;">Mulai Belajar</button>
+                    </div>
+
+                    <!-- Course 6 -->
+                    <div class="dashboard-card">
+                        <div style="background: linear-gradient(135deg, #8b5cf6, #6d28d9); height: 150px; border-radius: var(--radius-lg); margin-bottom: var(--spacing-lg);">
+                        </div>
+                        <h3 style="color: var(--color-light); margin-bottom: var(--spacing-sm);">Advanced Setups & Signals</h3>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-md);">
+                            <span style="color: var(--color-text-secondary); font-size: var(--font-size-sm);">Advanced</span>
+                            <span style="background: var(--color-gold); color: var(--color-dark); padding: 2px 8px; border-radius: 4px; font-size: var(--font-size-sm); font-weight: 600;">VIP</span>
+                        </div>
+                        <p style="color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--spacing-md);">Trading setups eksklusif dari expert traders</p>
+                        <button class="btn btn-pricing" style="width: 100%;">Upgrade untuk Akses</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
