@@ -5,8 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "npx http-server -p 3000 -c-1 --cors",
-    "serve": "npx http-server -p 8080",
+    "dev": "npx http-server . -p 3000 -c-1 --cors",
+    "serve": "npx http-server . -p 8080",
     "build": "echo 'No build step needed for static site'",
     "start": "npm run dev"
   },
