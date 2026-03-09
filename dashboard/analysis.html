@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Terminal - The Last Candle</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar (same as main) -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <div style="color: var(--color-gold); font-weight: 700; font-size: 1.25rem; margin-bottom: var(--spacing-lg);">
+                    🕯️ The Last Candle
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Menu Utama</div>
+                <ul class="sidebar-menu">
+                    <li><a href="main.html" class="sidebar-link">
+                        <span class="sidebar-icon">📊</span>
+                        <span>Dashboard</span>
+                    </a></li>
+                    <li><a href="analysis.html" class="sidebar-link active">
+                        <span class="sidebar-icon">📈</span>
+                        <span>Terminal Trading</span>
+                    </a></li>
+                    <li><a href="#" class="sidebar-link">
+                        <span class="sidebar-icon">🎯</span>
+                        <span>Signal Center</span>
+                    </a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Komunitas</div>
+                <ul class="sidebar-menu">
+                    <li><a href="forum.html" class="sidebar-link">
+                        <span class="sidebar-icon">💬</span>
+                        <span>Forum</span>
+                    </a></li>
+                    <li><a href="academy.html" class="sidebar-link">
+                        <span class="sidebar-icon">📚</span>
+                        <span>Academy</span>
+                    </a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Akun</div>
+                <ul class="sidebar-menu">
+                    <li><a href="#" class="sidebar-link">
+                        <span class="sidebar-icon">⚙️</span>
+                        <span>Pengaturan</span>
+                    </a></li>
+                    <li><a href="#" class="sidebar-link">
+                        <span class="sidebar-icon">💳</span>
+                        <span>Subscription</span>
+                    </a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="dashboard-main">
+            <!-- Header -->
+            <div class="dashboard-header">
+                <div>
+                    <h1 class="dashboard-title">Trading Terminal</h1>
+                </div>
+                <div class="dashboard-user">
+                    <div class="user-avatar">JD</div>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="dashboard-content">
+                <div class="dashboard-card">
+                    <h2 style="color: var(--color-light); margin-bottom: var(--spacing-md);">📈 Trading Terminal</h2>
+                    <p style="color: var(--color-text-secondary); margin-bottom: var(--spacing-lg);">
+                        Analisis teknikal dengan grafik TradingView terintegrasi. Pilih instrumen trading dan timeframe untuk analisis detail.
+                    </p>
+
+                    <!-- Controls -->
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+                        <div class="form-group">
+                            <label style="color: var(--color-light); font-size: var(--font-size-sm);">Trading Pair</label>
+                            <select style="padding: var(--spacing-sm); background: var(--color-dark); border: 1px solid var(--color-border); border-radius: var(--radius-md); color: var(--color-light);">
+                                <option>BTC/USD</option>
+                                <option>ETH/USD</option>
+                                <option>EUR/USD</option>
+                                <option>GOLD/USD</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label style="color: var(--color-light); font-size: var(--font-size-sm);">Timeframe</label>
+                            <select style="padding: var(--spacing-sm); background: var(--color-dark); border: 1px solid var(--color-border); border-radius: var(--radius-md); color: var(--color-light);">
+                                <option>1m</option>
+                                <option>5m</option>
+                                <option>15m</option>
+                                <option selected>1h</option>
+                                <option>4h</option>
+                                <option>1d</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label style="color: var(--color-light); font-size: var(--font-size-sm);">Indicator</label>
+                            <select style="padding: var(--spacing-sm); background: var(--color-dark); border: 1px solid var(--color-border); border-radius: var(--radius-md); color: var(--color-light);">
+                                <option>RSI</option>
+                                <option>MACD</option>
+                                <option>Bollinger Bands</option>
+                                <option>Moving Average</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chart Area -->
+                <div class="dashboard-card" style="height: 600px;">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: var(--color-text-secondary); border-radius: var(--radius-lg); background: var(--color-dark);">
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; margin-bottom: var(--spacing-md);">📊</div>
+                            <p>TradingView Chart akan ditampilkan di sini</p>
+                            <p style="font-size: var(--font-size-sm); margin-top: var(--spacing-sm);">Integrasi dengan TradingView Lightweight Charts</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Analysis Tools -->
+                <div class="grid-2">
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <div class="card-title">Technical Indicators</div>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: var(--spacing-md);">
+                            <div style="display: flex; justify-content: space-between; padding: var(--spacing-sm);">
+                                <span style="color: var(--color-text-secondary);">RSI (14)</span>
+                                <span style="color: var(--color-gold); font-weight: 600;">65.4</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: var(--spacing-sm);">
+                                <span style="color: var(--color-text-secondary);">MACD</span>
+                                <span style="color: var(--color-success);">Bullish</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: var(--spacing-sm);">
+                                <span style="color: var(--color-text-secondary);">Moving Average</span>
+                                <span style="color: var(--color-success);">Uptrend</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <div class="card-title">Support & Resistance</div>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: var(--spacing-md);">
+                            <div>
+                                <div style="color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: 4px;">Resistance</div>
+                                <div style="color: var(--color-danger); font-weight: 600;">$43,500</div>
+                            </div>
+                            <div>
+                                <div style="color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: 4px;">Pivot Point</div>
+                                <div style="color: var(--color-gold); font-weight: 600;">$42,350</div>
+                            </div>
+                            <div>
+                                <div style="color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: 4px;">Support</div>
+                                <div style="color: var(--color-success); font-weight: 600;">$41,200</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

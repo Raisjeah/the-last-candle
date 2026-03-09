@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - The Last Candle</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <div style="color: var(--color-gold); font-weight: 700; font-size: 1.25rem; margin-bottom: var(--spacing-lg);">
+                    🕯️ The Last Candle
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Menu Utama</div>
+                <ul class="sidebar-menu">
+                    <li><a href="main.html" class="sidebar-link active">
+                        <span class="sidebar-icon">📊</span>
+                        <span>Dashboard</span>
+                    </a></li>
+                    <li><a href="analysis.html" class="sidebar-link">
+                        <span class="sidebar-icon">📈</span>
+                        <span>Terminal Trading</span>
+                    </a></li>
+                    <li><a href="#" class="sidebar-link">
+                        <span class="sidebar-icon">🎯</span>
+                        <span>Signal Center</span>
+                    </a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Komunitas</div>
+                <ul class="sidebar-menu">
+                    <li><a href="forum.html" class="sidebar-link">
+                        <span class="sidebar-icon">💬</span>
+                        <span>Forum</span>
+                    </a></li>
+                    <li><a href="academy.html" class="sidebar-link">
+                        <span class="sidebar-icon">📚</span>
+                        <span>Academy</span>
+                    </a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Akun</div>
+                <ul class="sidebar-menu">
+                    <li><a href="#" class="sidebar-link">
+                        <span class="sidebar-icon">⚙️</span>
+                        <span>Pengaturan</span>
+                    </a></li>
+                    <li><a href="#" class="sidebar-link">
+                        <span class="sidebar-icon">💳</span>
+                        <span>Subscription</span>
+                    </a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="dashboard-main">
+            <!-- Header -->
+            <div class="dashboard-header">
+                <div>
+                    <h1 class="dashboard-title">Dashboard</h1>
+                </div>
+                <div class="dashboard-user">
+                    <div class="user-avatar">JD</div>
+                    <div class="user-menu">
+                        <button class="user-menu-toggle">⋮</button>
+                        <div class="user-dropdown">
+                            <div class="user-dropdown-item">Profil</div>
+                            <div class="user-dropdown-item">Pengaturan</div>
+                            <div class="user-dropdown-item">Logout</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="dashboard-content">
+                <!-- Welcome Section -->
+                <div class="dashboard-card">
+                    <h2 style="color: var(--color-light); margin-bottom: var(--spacing-md);">
+                        Selamat datang kembali, John! 👋
+                    </h2>
+                    <p style="color: var(--color-text-secondary);">
+                        Ini adalah dashboard utama Anda untuk memantau sinyal trading, performa, dan aktivitas komunitas.
+                    </p>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="grid-3">
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <div class="card-title">Sinyal Aktif</div>
+                        </div>
+                        <div style="text-align: center; padding: var(--spacing-lg) 0;">
+                            <div style="font-size: 2.5rem; color: var(--color-gold); font-weight: 700; margin-bottom: var(--spacing-sm);">
+                                5
+                            </div>
+                            <div style="color: var(--color-text-secondary);">Menunggu eksekusi</div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <div class="card-title">Win Rate</div>
+                        </div>
+                        <div style="text-align: center; padding: var(--spacing-lg) 0;">
+                            <div style="font-size: 2.5rem; color: var(--color-success); font-weight: 700; margin-bottom: var(--spacing-sm);">
+                                72.5%
+                            </div>
+                            <div style="color: var(--color-text-secondary);">30 hari terakhir</div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <div class="card-title">Total Profit</div>
+                        </div>
+                        <div style="text-align: center; padding: var(--spacing-lg) 0;">
+                            <div style="font-size: 2.5rem; color: var(--color-gold); font-weight: 700; margin-bottom: var(--spacing-sm);">
+                                +$2,450
+                            </div>
+                            <div style="color: var(--color-text-secondary);">Bulan ini</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Market Overview -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <div class="card-title">Market Overview</div>
+                        <div class="card-action">Refresh</div>
+                    </div>
+                    <table class="dashboard-table">
+                        <thead>
+                            <tr>
+                                <th>Pair</th>
+                                <th>Harga</th>
+                                <th>24h Change</th>
+                                <th>Sinyal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>BTC/USD</td>
+                                <td>$42,350.25</td>
+                                <td style="color: var(--color-success);">+2.45%</td>
+                                <td><span style="background: var(--color-success); color: white; padding: 0.25rem 0.75rem; border-radius: 4px;">BUY</span></td>
+                            </tr>
+                            <tr>
+                                <td>ETH/USD</td>
+                                <td>$2,280.50</td>
+                                <td style="color: var(--color-danger);">-1.23%</td>
+                                <td><span style="background: var(--color-danger); color: white; padding: 0.25rem 0.75rem; border-radius: 4px;">SELL</span></td>
+                            </tr>
+                            <tr>
+                                <td>EUR/USD</td>
+                                <td>1.0855</td>
+                                <td style="color: var(--color-success);">+0.65%</td>
+                                <td><span style="background: #6b7280; color: white; padding: 0.25rem 0.75rem; border-radius: 4px;">HOLD</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Recent Signals -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <div class="card-title">Sinyal Terbaru</div>
+                        <a href="#" class="card-action">Lihat Semua</a>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: var(--spacing-md);">
+                        <div style="padding: var(--spacing-md); border-left: 4px solid var(--color-success); background: rgba(16, 185, 129, 0.05); border-radius: 4px;">
+                            <div style="color: var(--color-light); font-weight: 600; margin-bottom: 4px;">BTC/USD - BUY Signal</div>
+                            <div style="color: var(--color-text-secondary); font-size: 0.875rem;">Entry: $42,000 | TP: $43,500 | SL: $41,000</div>
+                        </div>
+
+                        <div style="padding: var(--spacing-md); border-left: 4px solid var(--color-danger); background: rgba(239, 68, 68, 0.05); border-radius: 4px;">
+                            <div style="color: var(--color-light); font-weight: 600; margin-bottom: 4px;">ETH/USD - SELL Signal</div>
+                            <div style="color: var(--color-text-secondary); font-size: 0.875rem;">Entry: $2,300 | TP: $2,150 | SL: $2,400</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // User menu toggle
+        document.querySelector('.user-menu-toggle')?.addEventListener('click', () => {
+            document.querySelector('.user-dropdown').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
